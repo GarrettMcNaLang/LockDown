@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 336f3985addb2c54caf50b6681e38049
+guid: b86eedf99a0d23748b8564ae0808104c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 10
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,7 +97,73 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TileArtForNow_0
+      name: FinalDesignForTiles_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 22
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd5829faf77759a4dbddd2d12b30ca4e
+      internalID: 406161931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalDesignForTiles_1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 22
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9197c96c9a8e814f8fc317251849194
+      internalID: -1200275546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalDesignForTiles_2
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 22
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 530faf1afb8ad744b802354133a53a19
+      internalID: 1926443306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalDesignForTiles_3
       rect:
         serializedVersion: 2
         x: 0
@@ -112,14 +178,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a72d2df3819c88b4d97eeb3531b3d634
-      internalID: -935304416
+      spriteID: 8b36718be3ba2f04dbffad76bb19229b
+      internalID: 774240332
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileArtForNow_1
+      name: FinalDesignForTiles_4
       rect:
         serializedVersion: 2
         x: 10
@@ -134,14 +200,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cda6933d1b869bf4db5ff9ab20492139
-      internalID: -1472686759
+      spriteID: c81292a1ddadf0340b7cfa7ce966a7f6
+      internalID: 1876278983
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileArtForNow_2
+      name: FinalDesignForTiles_5
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 12
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c18157a6edc989e4c937645888605e0a
+      internalID: -330675690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FinalDesignForTiles_6
       rect:
         serializedVersion: 2
         x: 0
@@ -156,14 +244,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9b229d9dd24fdf4f876211f9bba0729
-      internalID: -1600278644
+      spriteID: c2f8a77b263201d4881eb0d252aa9b99
+      internalID: 1297974995
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileArtForNow_3
+      name: FinalDesignForTiles_7
       rect:
         serializedVersion: 2
         x: 10
@@ -178,14 +266,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c265c7f45a53d404c84b0c0dc5d24ed5
-      internalID: 583281403
+      spriteID: 98ba69c3ddd151846a7107e1b81ef442
+      internalID: -746315299
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileArtForNow_4
+      name: FinalDesignForTiles_8
       rect:
         serializedVersion: 2
         x: 20
@@ -200,8 +288,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f5bfa4d157a3314baa5f446f1fd987c
-      internalID: 78616781
+      spriteID: 4a8ab8a076f289044870cf2bafa4b8bd
+      internalID: 652943373
       vertices: []
       indices: 
       edges: []
@@ -210,7 +298,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: fe277b218bd3aad4c896673267192fc0
+    spriteID: c3e393aed9c54044d8e6ff4de37598ee
     internalID: 0
     vertices: []
     indices: 
@@ -220,11 +308,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      TileArtForNow_0: -935304416
-      TileArtForNow_1: -1472686759
-      TileArtForNow_2: -1600278644
-      TileArtForNow_3: 583281403
-      TileArtForNow_4: 78616781
+      FinalDesignForTiles_0: 406161931
+      FinalDesignForTiles_1: -1200275546
+      FinalDesignForTiles_2: 1926443306
+      FinalDesignForTiles_3: 774240332
+      FinalDesignForTiles_4: 1876278983
+      FinalDesignForTiles_5: -330675690
+      FinalDesignForTiles_6: 1297974995
+      FinalDesignForTiles_7: -746315299
+      FinalDesignForTiles_8: 652943373
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
