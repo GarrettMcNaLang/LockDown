@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class FastZombie : MonoBehaviour
+public class FastZombie : EnemyBehavior
 {
 
     private int _FZHealth;
@@ -12,5 +12,10 @@ public class FastZombie : MonoBehaviour
         set { _FZHealth = value; }
 
 
+    }
+
+    void Reset()
+    {
+        
     }
 }

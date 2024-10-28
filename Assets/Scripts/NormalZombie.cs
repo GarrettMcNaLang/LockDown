@@ -1,16 +1,22 @@
 using UnityEngine;
 
-public class NormalZombie : MonoBehaviour
+public class NormalZombie : EnemyBehavior
 {
 
-    private int _NZHealth;
-
-    public int NZHealth
+    void Start()
     {
-        get { return _NZHealth; }
+        EnemyHealth = Mathf.Clamp(EnemyHealth,0,100);
 
-        set { _NZHealth = value; }
+        EnemySpeed = 2.0f;
+
+        EnemyAttackRate = 1.0f;
 
 
     }
+
+    void Reset()
+    {
+        
+    }
+
 }
