@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerIcon : MonoBehaviour
 {
+    //door equals true, tower equals false
+    private bool CurrSelectedTower;
+
     private int _playerHealth;
 
     public int PlayerHealth
@@ -49,5 +52,31 @@ public class PlayerIcon : MonoBehaviour
     public Vector2 DistributeLocation()
     {
         return this.transform.position;
+    }
+
+    public void SelectedTower()
+    {
+
+    }
+
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+              Debug.DrawRay(ray.origin, ray.direction * Mathf.Infinity, Color.red, 5f);
+            //starting this ray for this distance
+            //when you pass a variable to an out, every change will change the actual object
+            //If the ray hits something, put the hit information in the hit variable
+            if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity))
+            {
+                if(hit.transform.TryGetComponent<PathSquareScript>(out PathSquareScript tile))
+                {
+                    //ChangeTileState(CurrSelectedTower);
+                }
+            }
+
+        }
     }
 }
