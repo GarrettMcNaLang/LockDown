@@ -5,6 +5,11 @@ public class GM : MonoBehaviour
 {
     #region Variables
 
+    public GameObject MainMenu;
+
+    public GameObject PauseMenu;
+
+    public GameObject MainUI;
 
     #endregion
     public static GM instance;
@@ -14,6 +19,8 @@ public class GM : MonoBehaviour
         instance = this;
 
         DontDestroyOnLoad(gameObject);
+
+        MainMenu.SetActive(true);
     }
 
     //will be 100
@@ -48,12 +55,50 @@ public class GM : MonoBehaviour
 
     }
 
+    void Update()
+    {
+        bool Esc = Input.GetKeyDown(KeyCode.Escape);
+
+        if(Input.GetKeyDown(KeyCode.Escape)) {
+        
+            PauseMenu.SetActive(true);
+            MainUI.SetActive(false);
+            Time.timeScale = 0.0f;
+        }
+        Esc = false;
+        
+    }
+
+    public void Resume()
+    {
+        Time.timeScale = 1.0f;
+        PauseMenu.SetActive(false);
+        MainUI.SetActive(true);
+    }
+
+    public void ReturnToMain()
+    {
+        MainMenu.SetActive(true);
+        PauseMenu.SetActive(false);
+        MainUI.SetActive(false);
+        Time.timeScale = 0.0f;
+    }
+
     /// <summary>
     /// Function that handles all necessary funcitonality for when the player starts the game, no matter if it's the first time or any nth time in the future
     /// </summary>
     public void OnPlay()
     {
-        
+        MainMenu.SetActive(false);
+        MainUI.SetActive(true);
+
+    }
+
+  
+
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 
     public void OnEnable()
