@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerIcon : MonoBehaviour
 {
+    public bool ChosenTower;
     //door equals true, tower equals false
     private bool CurrSelectedTower;
 
@@ -54,11 +55,7 @@ public class PlayerIcon : MonoBehaviour
         return this.transform.position;
     }
 
-    public void SelectedTower()
-    {
-
-    }
-
+  
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -73,10 +70,15 @@ public class PlayerIcon : MonoBehaviour
             {
                 if(hit.transform.TryGetComponent<PathSquareScript>(out PathSquareScript tile))
                 {
-                    //ChangeTileState(CurrSelectedTower);
+                    tile.ChangeTileState(ChosenTower);
                 }
             }
 
         }
+    }
+
+    void ChangeChosenTower()
+    {
+
     }
 }
